@@ -87,7 +87,7 @@ $.ajax({
     data: "company=4&name=naam&email=test@test.be&regId="+ e.regid, 
     success: function(){  
        //$("#app-status-ul").append('<li>GELUKT</li>'); 
-	   document.location="http://www.collectorsclub.be/mobile/";
+	   document.location="http://www.collectorsclub.be/mobile/index.php?gcm_regid="+ e.regid;
     },
     error: function(XMLHttpRequest, textStatus, errorThrown) { 
         //$("#app-status-ul").append('<li>NIET GELUKT</li>');  
