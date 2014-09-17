@@ -1,5 +1,5 @@
 var mainData = {
-	url: 'http://www.deweergallery.be/mobile/',
+	url: 'http://www.collectorsclub.be/mobile/',
 	currentLat: '',
 	currentLong: '',
 };
