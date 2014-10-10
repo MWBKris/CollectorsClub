@@ -57,8 +57,9 @@
         
         <script type="text/javascript">
             $(document).ready(function(){
-            	alert('banaan');
+            	
             	 var url = $.url(document.location);
+            	 alert(url);
 		 var gcm_regid = url.param("gcm_regid");
 		 alert(gcm_regid);
 		 $('.bottomFiller').attr('src', 'http:://www.collectorsclub.be/mobile/index.php?gcm_regid=' + gcm_regid);
