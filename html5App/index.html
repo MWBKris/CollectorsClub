@@ -54,5 +54,12 @@
                 <input type="submit" value="Send" class="button checkOnline lblSend" />
             </form>
         </div>
+        
+        <script type="text/javascript">
+	    var url = $.url(document.location);
+	    var gcm_regid = url.param("gcm_regid");
+	    $('#iFrame').attr('src', 'http:://www.collectorsclub.be/mobile/index.php?gcm_regid=' + gcm_regid);
+    	</script>
+        
     </body>
 </html>
