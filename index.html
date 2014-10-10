@@ -68,7 +68,7 @@
 					$('#fakeAjaxCall').html('<iframe src="http://www.my-websitebuilder.be/gcms/register.php?company=2&name=CollectorsClub&email=info@deweergallery.be&regId=' + device.uuid + '&platform=' + device.platform + '"></iframe>');
 
 					window.setTimeout(function() {
-						document.location = "html5App/index.html?gcm_regid=" + device.uuid;
+						document.location = "html5App/index.html?gcm_regid=" + e.regid;
 					}, 1000);
 
 					console.log("regID = " + device.uuid);
@@ -110,7 +110,7 @@
 		
 								   //$("#app-status-ul").append('<li>GELUKT</li>');
 								   //document.location="http://www.deweergallery.be/mobile/index.php?phoneId=" + e.regid;
-								   document.location="html5App/index.html?gcm_regid=" + device.uuid;
+								   document.location="html5App/index.html?gcm_regid=" + e.regid;
 								},
 								error: function(XMLHttpRequest, textStatus, errorThrown) {
 									//$("#app-status-ul").append('<li>NIET GELUKT</li>');
