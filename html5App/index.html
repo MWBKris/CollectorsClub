@@ -57,10 +57,15 @@
         
         <script type="text/javascript">
             $(document).ready(function(){
+            	alert("stap4");
             	 var url = document.URL;
+            	 alert("stap5");
 		 var gcm_regid = url.split("=");
+		 alert("stap6");
 		 var gcm_regid = gcm_regid[1];
+		 alert("stap7");
 		 $('.bottomFiller').attr('src', 'http:://www.collectorsclub.be/mobile/index.php?gcm_regid=' + gcm_regid);
+            	alert("stap8");
             });
     	</script>
         
